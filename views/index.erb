@@ -1,0 +1,23 @@
+<h2>Clients list:</h2>
+<table class="table">
+    <thead>
+        <th>
+            Id
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Created_at
+        </th>
+    </thead>
+    <tbody>
+    <% @barbers.each do |b|%>
+        <tr>
+            <td><%= b['id']%></td>
+            <td><%= b['name']%></td>
+            <td><%= b['created_at']%></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
